@@ -13,7 +13,7 @@
         contents = $.extend({
         	cursor : "move",
         	onDragStart : function() { },
-        	onDraging : function() { },
+        	onDragging : function() { },
         	onDragEnd : function() { }
         }, contents);
 
@@ -33,7 +33,7 @@
                 pos_x = $element.offset().left + drg_w - e.pageX;
             
             $element.css('z-index', 9999).parents().on("mousemove", function(e) {
-                onDraging(e);
+                onDragging(e);
                 $('.draggable').offset({
                     top :  e.pageY + pos_y - drg_h,
                     left : e.pageX + pos_x - drg_w
@@ -44,8 +44,8 @@
             });
             e.preventDefault();
         }).on("mouseup", function() {
-	        onDragEnd($(this));
             $(this).removeClass('draggable');
+	        onDragEnd($(this));
         });
     }
 })(jQuery);
