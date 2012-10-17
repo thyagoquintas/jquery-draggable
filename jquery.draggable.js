@@ -2,14 +2,14 @@
  * jQuery Drag plugin v1.0.0
  * 
  * Copyright 2012, Thyago Quintas (dev@thyagoquintas.com.br)
- * https://github.com/thyagoquintas/jquery-drag/
+ * https://github.com/thyagoquintas/jquery-draggable/
  * 
  * Dual licensed under the MIT or GPL Version 2 licenses.
  * http://www.opensource.org/licenses/mit-license.php
  * http://www.opensource.org/licenses/GPL-2.0 
  */
 (function($) {
-    $.fn.drag = function(contents) {
+    $.fn.draggable = function(contents) {
         contents = $.extend({
         	cursor : "move",
         	onDragStart : function() { },

@@ -1,4 +1,4 @@
-# jquery-drag
+# jquery-draggable
 
 A simple, jQuery plugin for drag objects.
 
@@ -6,17 +6,17 @@ A simple, jQuery plugin for drag objects.
 
 Include script after the jQuery library (unless you are packaging scripts somehow else):
 
-    <script src="/path/to/jquery.drag.js"></script>
+    <script src="/path/to/jquery.draggable.js"></script>
 
 ## Usage
 
 Basic form
 
-    $(selector).drag();
+    $(selector).draggable();
 
 Complete form
 
-    $(selector).drag({
+    $(selector).draggable({
       cursor : "move", //type of cursor;
       onDragStart : function () { console.log("Start"); }, //function before start drag
       onDragging : function () { console.log("continue"); }, //function while dragging 
