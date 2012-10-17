@@ -18,7 +18,7 @@
         }, contents);
 
 	    var onDragStart = contents.onDragStart;
-	    var onDraging = contents.onDraging;
+	    var onDragging = contents.onDragging;
 	    var onDragEnd = contents.onDragEnd;
         var $element = this;
 
